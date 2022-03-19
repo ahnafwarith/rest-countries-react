@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Country from '../Country/Country';
+import './Countries.css';
 
 const Countries = () => {
     const [countries, setToCountries/* this function will send the fetched value to use state and after useState() is done with the data, it will be sent to countries variable */] = useState([/* default value */])
@@ -13,9 +14,11 @@ const Countries = () => {
     return (
         <div>
             <h1>Available Countries: {countries.length}</h1>
-            {
-                countries.map(country => <Country country={country}></Country>)
-            }
+            <div className='countries-container'>
+                {
+                    countries.map(country => <Country country={country}></Country>)
+                }
+            </div>
         </div>
     );
 };
