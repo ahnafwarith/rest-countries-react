@@ -3,7 +3,3 @@
     margin: 20px;
     padding: 20px;
 }
-.country-grid{
-    display: grid;
-    grid-template-columns: repeat(3,fr);
-}
